@@ -1,0 +1,90 @@
+body {
+  background-color: grey;
+  font: 16px/26px D-DIN-Regular, Arial, Verdana, sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  margin: auto 3.5vw;
+  padding-top: 30px;
+}
+
+.svg-logo {
+  width: 210px;
+}
+
+.fill-white {
+  fill: white;
+}
+
+.nav-menu {
+  text-transform: uppercase;
+  font: 14px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  margin-left: 24px;
+  padding-top: 0.4em;
+}
+
+.menu-item {
+  margin: auto 12px;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  text-decoration: underline;
+}
+
+.upcoming-launch {
+  height: 857px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Digital_Globe_1_Vertical_1706_Desktop_49a35d7491.jpg");
+}
+
+.inner-section-content {
+  color: white;
+  margin: 30rem 3.5vw 1rem;
+  text-transform: uppercase;
+  font: 20px/38px D-DIN-Medium, Arial, Verdana, sans-serif;
+}
+
+.inner-section-content p {
+  margin: 0;
+}
+
+h2 {
+  font: 46px/50px D-DIN-Bold, Arial, Verdana, sans-serif;
+  margin: 0px;
+  text-shadow: 0 0 2px #555;
+}
+
+.inner-section-content a.btn {
+  display: inline-block;
+  color: white;
+  padding: 0 15px;
+  margin: 30px 0 0;
+  min-width: 130px;
+  border: 2px solid #fff;
+  text-align: center;
+  text-decoration: none;
+  height: 50px;
+  font: 16px/24px D-DIN-Medium, Arial, Verdana, sans-serif;
+}
+
+.inner-section-content a.btn:hover {
+  background-color: #fff;
+  color: black;
+  transition: color 1s cubic-bezier(0.25, 1, 0.25, 1),
+    background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+.inner-section-content a.btn .text {
+  display: block;
+  margin-top: 12px;
+}
