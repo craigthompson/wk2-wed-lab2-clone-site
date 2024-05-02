@@ -1,5 +1,61 @@
+/* *************************************************** */
+/*                       Fonts                         */
+/* *************************************************** */
+@font-face {
+  font-family: D-DIN-Medium;
+  src: url(fonts/D-DIN.woff2) format("woff2"),
+    url(fonts/D-DIN.woff) format("woff"),
+    url(fonts/D-DIN.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: D-DIN-Light;
+  src: url(fonts/D-DIN.woff2) format("woff2"),
+    url(fonts/D-DIN.woff) format("woff"),
+    url(fonts/D-DIN.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: D-DIN-Bold;
+  src: url(fonts/D-DIN-Bold.woff2) format("woff2"),
+    url(fonts/D-DIN-Bold.woff) format("woff"),
+    url(fonts/D-DIN-Bold.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: D-DIN-Regular;
+  src: url(fonts/D-DIN.woff2) format("woff2"),
+    url(fonts/D-DIN.woff) format("woff"),
+    url(fonts/D-DIN.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+/* *************************************************** */
+/*                      Colors                         */
+/* *************************************************** */
+:root {
+  --grey: #a0a0a0;
+  --dark-grey: #555;
+  --white: #ffffff;
+  --black: #050505;
+}
+
+/* *************************************************** */
+/*                     Elements                        */
+/* *************************************************** */
 body {
-  background-color: grey;
+  background-color: var(--grey);
   font: 14px/26px D-DIN-Regular, Arial, Verdana, sans-serif;
   margin: 0;
 }
@@ -15,7 +71,7 @@ body {
 }
 
 .fill-white {
-  fill: white;
+  fill: var(--white);
 }
 
 .nav-menu {
@@ -32,7 +88,7 @@ body {
 }
 
 .menu-item a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -41,7 +97,7 @@ body {
 }
 
 .upcoming-launch {
-  height: 857px;
+  height: 100vh; /* 857px; */
   background-size: cover;
   background-position: center center;
   background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Digital_Globe_1_Vertical_1706_Desktop_49a35d7491.jpg");
@@ -52,15 +108,15 @@ body {
 }
 
 .inner-section-content {
-  color: white;
-  margin: 30rem 7vw 1rem;
+  color: var(--white);
+  margin: 32% 7vw 0;
   text-transform: uppercase;
   font: 18px/38px D-DIN-Medium, Arial, Verdana, sans-serif;
 }
 
 .inner-section-content-second {
-  color: white;
-  margin: 0 3.5vw 1rem;
+  color: var(--white);
+  margin: 0 7vw 0;
   padding: 34rem 0 0;
   text-transform: uppercase;
   font: 18px/38px D-DIN-Medium, Arial, Verdana, sans-serif;
@@ -74,17 +130,17 @@ body {
 h2 {
   font: 42px/50px D-DIN-Bold, Arial, Verdana, sans-serif;
   margin: 0px;
-  text-shadow: 0 0 2px #555;
+  text-shadow: 0 0 2px var(--dark-grey);
 }
 
 .inner-section-content a.btn,
 .inner-section-content-second a.btn {
   display: inline-block;
-  color: white;
+  color: var(--white);
   padding: 0 15px;
   margin: 30px 0 0;
   min-width: 130px;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   text-align: center;
   text-decoration: none;
   height: 50px;
@@ -93,8 +149,8 @@ h2 {
 
 .inner-section-content a.btn:hover,
 .inner-section-content-second a.btn:hover {
-  background-color: #fff;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   transition: color 1s cubic-bezier(0.25, 1, 0.25, 1),
     background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
 }
