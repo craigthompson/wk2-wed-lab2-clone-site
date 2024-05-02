@@ -1,12 +1,12 @@
 body {
   background-color: grey;
-  font: 16px/26px D-DIN-Regular, Arial, Verdana, sans-serif;
+  font: 14px/26px D-DIN-Regular, Arial, Verdana, sans-serif;
   margin: 0;
 }
 
 .header {
   display: flex;
-  margin: auto 3.5vw;
+  margin: auto 7vw;
   padding-top: 30px;
 }
 
@@ -20,7 +20,7 @@ body {
 
 .nav-menu {
   text-transform: uppercase;
-  font: 14px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
+  font: 12px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
   font-weight: 500;
   display: inline-block;
   margin-left: 24px;
@@ -47,24 +47,38 @@ body {
   background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Digital_Globe_1_Vertical_1706_Desktop_49a35d7491.jpg");
 }
 
-.inner-section-content {
-  color: white;
-  margin: 30rem 3.5vw 1rem;
-  text-transform: uppercase;
-  font: 20px/38px D-DIN-Medium, Arial, Verdana, sans-serif;
+.second-launch {
+  background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Starlink_SLC_40_Desktop_5b1e6b5dd0.jpg");
 }
 
-.inner-section-content p {
+.inner-section-content {
+  color: white;
+  margin: 30rem 7vw 1rem;
+  text-transform: uppercase;
+  font: 18px/38px D-DIN-Medium, Arial, Verdana, sans-serif;
+}
+
+.inner-section-content-second {
+  color: white;
+  margin: 0 3.5vw 1rem;
+  padding: 34rem 0 0;
+  text-transform: uppercase;
+  font: 18px/38px D-DIN-Medium, Arial, Verdana, sans-serif;
+}
+
+.inner-section-content p,
+.inner-section-content-second p {
   margin: 0;
 }
 
 h2 {
-  font: 46px/50px D-DIN-Bold, Arial, Verdana, sans-serif;
+  font: 42px/50px D-DIN-Bold, Arial, Verdana, sans-serif;
   margin: 0px;
   text-shadow: 0 0 2px #555;
 }
 
-.inner-section-content a.btn {
+.inner-section-content a.btn,
+.inner-section-content-second a.btn {
   display: inline-block;
   color: white;
   padding: 0 15px;
@@ -74,17 +88,19 @@ h2 {
   text-align: center;
   text-decoration: none;
   height: 50px;
-  font: 16px/24px D-DIN-Medium, Arial, Verdana, sans-serif;
+  font: 12px/24px D-DIN-Medium, Arial, Verdana, sans-serif;
 }
 
-.inner-section-content a.btn:hover {
+.inner-section-content a.btn:hover,
+.inner-section-content-second a.btn:hover {
   background-color: #fff;
   color: black;
   transition: color 1s cubic-bezier(0.25, 1, 0.25, 1),
     background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
 }
 
-.inner-section-content a.btn .text {
+.inner-section-content a.btn .text,
+.inner-section-content-second a.btn .text {
   display: block;
   margin-top: 12px;
 }
